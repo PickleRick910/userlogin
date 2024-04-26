@@ -35,7 +35,7 @@ public class LoginSteps {
     @When("the user enters a valid username")
     public void the_user_enters_a_valid_username() {
         WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_email")));
-        emailField.sendKeys("mohammedfurqan383@gmail.com");
+        emailField.sendKeys("enter you prime email adrress");
         WebElement continueButton = driver.findElement(By.id("continue"));
         continueButton.click();
     }
@@ -43,7 +43,7 @@ public class LoginSteps {
     @And("the user enters their password")
     public void the_user_enters_their_password() {
         WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_password")));
-        passwordField.sendKeys("cheesepizza");
+        passwordField.sendKeys("enter prime password");
     }
 
     @And("the user clicks the sign in button")
